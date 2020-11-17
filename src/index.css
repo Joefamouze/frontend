@@ -40,6 +40,7 @@ footer{
     background-color: #203040;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 10px;
 }
 h1{
     font-size: 1.rem;
@@ -55,6 +56,36 @@ a{
 a:hover {
     color: blue;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li{
+  margin-top: 1rem;
+  
+}
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  background-color: grey;
+}
+button:hover{
+  border: 0.1rem #a4a4a4 solid;
+}
+button.primary{
+  background-color: gold;
+}
+button.block{
+  width: 100%;
+}
+
 header a {
     color: white;
     padding: 1rem;
@@ -74,6 +105,18 @@ a.brand{
 .row.center{
     justify-content: center;
 }
+.row.top{
+  align-items: flex-start;
+}
+.row.side {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
 
 img{
     border-radius:0.5rem ;
@@ -81,6 +124,9 @@ img{
 img.medium{
     max-width: 29rem;
     width: 100%
+}
+img.large{
+  width: 100%;
 }
 
 
@@ -104,5 +150,16 @@ img.medium{
 .rating span {
     color: gold;
     margin: 0.1rem
+}
+.rating span:last-child{
+    color: black;
+    font-weight: bold;
+}
+
+.success {
+  color: green;
+}
+.error{
+  color: red
 }
 
